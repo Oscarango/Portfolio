@@ -65,28 +65,39 @@ footer {
     background-color: #333;
     color: rgb(226, 225, 225);
     text-align: center;
-    padding: 1rem;
-}
+    padding: 0.01rem;
 
-form input,
-form textarea,
-form button {
-    display: block;
-    margin-bottom: 1rem;
-    width: 100%;
-    padding: 0.5rem;
-}
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
 
-form button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
+    /* Styling for contact information */
+    .contact-info {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
 
-form button:hover {
-    background-color: #666;
+    /* Styling for address */
+    .address {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    /* Styling for location */
+    .location {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    /* Styling for email address */
+    .email {
+      font-size: 16px;
+    }
+
+
 }
 img {
       width: 200px;
@@ -107,6 +118,7 @@ img {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noble Minds Solutions Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -283,12 +295,10 @@ achieve remarkable results that make a lasting impact</p>
 
     <section id="contact">
         <h2>Contact Us</h2>
-        <form action="contact_form_handler.php" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+        <div class="contact-info"><i class="fas fa-phone"></i> Contact us: manzy's #</div>
+        <div class="address"><i class="fas fa-map-marker-alt"></i> 1234 Example Street, City, Country</div>
+        <div class="location"><i class="fas fa-globe"></i> Find us on the map: Lilongwe</div>
+        <div class="email"><i class="fas fa-envelope"></i> Email us: manzy's email</div>
     </section>
 
     <footer>
